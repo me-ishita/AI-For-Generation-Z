@@ -32,18 +32,18 @@ const facts = [
 
 const principles = [
   {
-    icon: BrainCircuit,
+    icon: Sparkles,
     number: "01",
+    title: "Innovate",
+    description: "Find a problem worth solving, test ideas with users and shape a thoughtful AI solution.",
+    accent: "from-orange-300 to-orange-600",
+  },
+  {
+    icon: BrainCircuit,
+    number: "02",
     title: "Build",
     description: "Understand how AI works, then shape a supervised agent or workflow around a real, testable task.",
     accent: "from-sky-400 to-blue-600",
-  },
-  {
-    icon: Sparkles,
-    number: "02",
-    title: "Innovate",
-    description: "Find a problem worth solving, test ideas with users and turn a prototype into a thoughtful venture.",
-    accent: "from-orange-300 to-orange-600",
   },
   {
     icon: ShieldCheck,
@@ -64,12 +64,12 @@ const principles = [
 const schedule = [
   {
     day: "Day 01",
-    phase: "Build",
-    title: "Where AI comes from and how it thinks",
-    output: "House charter · Company identity · AI comparison · Opportunity brief",
+    phase: "Innovate",
+    title: "Discover a problem worth solving",
+    output: "House charter · Company identity · Customer persona · Opportunity brief",
     sessions: [
       ["09:00–09:20", "Arrival", "Registration, House allocation and welcome", "Safeguarding briefing, ground rules and a walkthrough of the week."],
-      ["09:20–09:45", "Briefing", "The five-day Founders’ Challenge", "Introduce the Build → Innovate → Secure → Present journey and how the week builds on pre-programme tool skills."],
+      ["09:20–09:45", "Briefing", "The five-day Founders’ Challenge", "Introduce the Innovate → Build → Secure → Present journey and how the week builds on pre-programme tool skills."],
       ["09:45–10:30", "Lecture", "A short history of AI", "Explore symbolic AI, expert systems, deterministic rules, knowledge and inference through an interactive timeline."],
       ["10:30–10:45", "Break", "Refreshment break", "A short morning break."],
       ["10:45–11:30", "Lecture", "From statistics to generative AI", "Compare predictive machine learning, neural networks, deep learning, generative and multimodal models."],
@@ -84,7 +84,7 @@ const schedule = [
   },
   {
     day: "Day 02",
-    phase: "Build → Innovate",
+    phase: "Build",
     title: "From models to intelligent agents",
     output: "Agent architecture · Prototype v1 · Test cases · Persona · Value proposition",
     sessions: [
@@ -102,8 +102,8 @@ const schedule = [
   },
   {
     day: "Day 03",
-    phase: "Innovate",
-    title: "Turn a prototype into a venture",
+    phase: "Build",
+    title: "Turn your prototype into a tested solution",
     output: "Testable MVP/demo v2 · Model rationale · Business model · Evidence log · Pitch outline",
     sessions: [
       ["09:00–09:15", "Arrival", "Recap and daily briefing", "Review each team’s persona and first prototype; set goals for the day."],
@@ -140,7 +140,7 @@ const schedule = [
   },
   {
     day: "Day 05",
-    phase: "Secure → Present",
+    phase: "Present",
     title: "Assure, communicate and defend",
     output: "Final test log · Assurance note · Deployment note · Pitch/deck and demo · Reflection",
     sessions: [
@@ -344,12 +344,12 @@ export function AIForGenerationZ() {
             </div>
 
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-sky-200 sm:text-sm">An Imperial faculty-led experience in India</p>
-            <h1 className="text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] sm:text-7xl lg:text-[5.5rem]">
-              AI for
-              <span className="mt-2 block">Generation <span className="logo-shine">Z</span></span>
+            <h1 className="max-w-[15ch] text-[clamp(2.25rem,4.2vw,4.25rem)] font-extrabold leading-[1.02] tracking-[-0.045em]">
+              Innovate, Build
+              <span className="mt-1 block">and Secure <span className="logo-shine">with AI</span></span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg font-semibold leading-relaxed text-white sm:text-2xl">
-              Certification to <span className="text-orange-300">Build</span>, <span className="text-orange-300">Innovate</span> &amp; <span className="text-orange-300">Secure</span> with <span className="text-orange-300">AI</span>
+              Designed for the next generation of innovators.
             </p>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-lg">
               Organised by Imperial College London and delivered in India, this exceptional opportunity brings faculty experts to teach young innovators. Students explore AI, build practical skills and gain a world-class learning experience from Imperial, here in India.
@@ -468,7 +468,7 @@ export function AIForGenerationZ() {
 
             <div className="relative z-10 mx-auto grid w-full gap-4 sm:grid-cols-2 lg:max-w-[920px] lg:gap-4">
               {[
-                { title: "Get Certified by World’s #2 University", focus: "Recognition", copy: "Recognition for completing the AI programme. Earned through a learning experience at a world-leading university.", image: "/images/generation-z/opportunities/imperial-certificate.png", alt: "Sample certificate for completing Build, Innovate and Secure with AI at Imperial College London", fit: "object-contain bg-white" },
+                { title: "Get Certified by World’s #2 University", focus: "Recognition", copy: "Recognition for completing the AI programme. Earned through a learning experience at a world-leading university.", image: "/images/generation-z/opportunities/imperial-certificate.png", alt: "Sample certificate for completing Innovate, Build and Secure with AI at Imperial College London", fit: "object-contain bg-white" },
                 { title: "Understand the technology", focus: "AI literacy", copy: "Explore rules, machine learning, generative models and AI agents. Compare where each approach is most useful.", image: "/images/generation-z/opportunities/technology.jpg", alt: "AI dashboards and data visualisations on a research workstation", fit: "object-cover" },
                 { title: "Turn ideas into prototypes", focus: "Prototyping", copy: "Start with a real STEM problem. Test an early idea with users and improve it with evidence.", image: "/images/generation-z/opportunities/prototype.jpg", alt: "A learner develops and studies a neural network at a workstation", fit: "object-cover" },
                 { title: "Build with responsibility", focus: "Responsible AI", copy: "Identify failure modes and risks to privacy, fairness and security. Explain how your idea should be used responsibly.", image: "/images/generation-z/opportunities/teamwork.jpg", alt: "A diverse student team collaborates on a technology project", fit: "object-cover" },
@@ -497,14 +497,14 @@ export function AIForGenerationZ() {
         <div className="mx-auto max-w-7xl">
           <header className="mx-auto mb-8 max-w-3xl text-center">
             <p className="mb-2 text-xs font-black uppercase tracking-[0.25em] text-blue-800">Core framework</p>
-            <h2 className="text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">Build, Innovate &amp; Secure with AI</h2>
+            <h2 className="text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl">Innovate, Build &amp; Secure with AI</h2>
             <p className="mx-auto mt-2 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">One real-world challenge, carried through four connected pillars over five days. You finish with something you built, tested, strengthened and confidently presented.</p>
           </header>
 
           <div aria-hidden="true" className="mb-4 hidden items-center justify-center px-[18%] md:flex">
             {[
-              ["1", "bg-amber-500", "bg-amber-500"],
-              ["2", "bg-blue-700", "bg-blue-700"],
+              ["1", "bg-blue-700", "bg-blue-700"],
+              ["2", "bg-amber-500", "bg-amber-500"],
               ["3", "bg-emerald-600", "bg-emerald-600"],
               ["4", "bg-violet-600", "bg-violet-600"],
             ].map(([number, dot, line], index) => (
@@ -517,9 +517,9 @@ export function AIForGenerationZ() {
 
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {[
-              { phase: "Phase 1", days: "Days 1–2", title: "Build with AI", subtitle: "Build intelligent systems", image: "/images/generation-z/framework/build.jpg", alt: "AI builder developing a connected system at a workstation", icon: BrainCircuit, color: "amber", body: "Explore models, agents, data and the logic behind intelligent tools. Shape a supervised system around a real task, then test what it can and cannot do.", learn: "Systems thinking, agent design, data foundations and evaluation.", outcome: "Design brief, system map & prototype v1" },
-              { phase: "Phase 2", days: "Days 2–3", title: "Innovate with AI", subtitle: "From idea to real innovation", image: "/images/generation-z/framework/innovate.jpg", alt: "A diverse team collaborates on early product ideas", icon: Sparkles, color: "blue", body: "Find a problem worth solving. Learn from users, test assumptions and turn the strongest idea into a useful prototype with a clear value proposition.", learn: "User discovery, creative problem-solving, product thinking and value.", outcome: "Tested prototype v2 & innovation case" },
-              { phase: "Phase 3", days: "Days 3–4", title: "Secure with AI", subtitle: "Design trustworthy AI, then challenge it", image: "/images/generation-z/framework/secure.jpg", alt: "A security analyst reviews AI risk and threat dashboards", icon: ShieldCheck, color: "emerald", body: "Put your own system to the test. Identify failure modes, privacy and fairness risks, then improve the safeguards and explain the trade-offs.", learn: "Cybersecurity, privacy, explainability, evaluation and safety by design.", outcome: "Threat model, risk register & safeguards" },
+              { phase: "Phase 1", days: "Day 1", title: "Innovate with AI", subtitle: "Find a problem worth solving", image: "/images/generation-z/framework/innovate.jpg", alt: "A diverse team collaborates on early product ideas", icon: Sparkles, color: "blue", body: "Start with people and problems. Explore user needs, test assumptions and shape a promising challenge for an AI solution.", learn: "User discovery, creative problem-solving, product thinking and value.", outcome: "Customer persona & opportunity brief" },
+              { phase: "Phase 2", days: "Days 2–3", title: "Build with AI", subtitle: "Build intelligent systems", image: "/images/generation-z/framework/build.jpg", alt: "AI builder developing a connected system at a workstation", icon: BrainCircuit, color: "amber", body: "Explore models, agents and data, then build a supervised system around the challenge you chose. Test what it can do and where it needs improvement.", learn: "Systems thinking, agent design, data foundations and evaluation.", outcome: "System map, test cases & working prototype" },
+              { phase: "Phase 3", days: "Day 4", title: "Secure with AI", subtitle: "Design trustworthy AI, then challenge it", image: "/images/generation-z/framework/secure.jpg", alt: "A security analyst reviews AI risk and threat dashboards", icon: ShieldCheck, color: "emerald", body: "Put your system to the test. Identify failure modes and privacy, fairness and security risks, then strengthen safeguards and explain the trade-offs.", learn: "Cybersecurity, privacy, explainability, evaluation and safety by design.", outcome: "Threat model, risk register & safeguards" },
               { phase: "Phase 4", days: "Day 5", title: "Present with confidence", subtitle: "Make the work clear and compelling", image: "/images/generation-z/framework/present.jpg", alt: "A young founder presents a project to a review panel", icon: GraduationCap, color: "violet", body: "Bring the journey together in a live demonstration. Tell the story behind your solution, show the evidence, own its limitations and answer thoughtful questions.", learn: "Clear communication, evidence-led storytelling, reflection and Q&A.", outcome: "Final demo, pitch & personal reflection" },
             ].map((item) => {
               const Icon = item.icon;
@@ -559,7 +559,7 @@ export function AIForGenerationZ() {
           <header className="mx-auto mb-5 max-w-5xl text-center">
             <p className="mb-1.5 text-[10px] font-black uppercase tracking-[0.22em] text-blue-800">The five-day journey</p>
             <h2 className="text-3xl font-black uppercase leading-tight tracking-tight text-[#102541] sm:text-4xl">Five Days. One Transformative AI Journey.</h2>
-            <p className="mx-auto mt-2 max-w-5xl text-sm leading-relaxed text-slate-600 sm:text-base">From understanding AI to building, securing and presenting real-world solutions.</p>
+            <p className="mx-auto mt-2 max-w-5xl text-sm leading-relaxed text-slate-600 sm:text-base">From exploring ideas to building, securing and presenting real-world AI solutions.</p>
           </header>
 
           <div className="mb-3 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm">
